@@ -1,0 +1,9 @@
+.popular-title {
+    color: white;
+    text-align: center;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+}

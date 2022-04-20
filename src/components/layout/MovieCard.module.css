@@ -1,0 +1,37 @@
+.movieCard {
+  margin: 0 auto 5px;
+  width: 80%;
+  /* border: 1px solid #ffffff; */
+  border-radius: 5px;
+}
+
+.movieCardImg {
+  width: 100%;
+}
+
+.movieCardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-size: 18px;
+  color: #ffffff;
+  /* text-align: center; */
+}
+
+.desc {
+  text-align: left;
+  font-size: 14px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+i { 
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+}

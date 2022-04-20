@@ -1,0 +1,16 @@
+.navbar {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 18px;
+}
+
+/* @media (min-width: 426px) {
+    a {
+        color: green;
+    }
+} */
