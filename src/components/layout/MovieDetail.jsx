@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import styles from "./MovieDetail.module.css";
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -17,14 +18,16 @@ const MovieDetail = () => {
 
   return (
     <div>
-      <h2>detalle de Pelicula: {movieDetail.title}</h2>
+      <h2 className={styles.title}>detalle de Pelicula: {movieDetail.title}</h2>
       <img
         src={imagePath + movieDetail.poster_path}
         alt={movieDetail.title}
         className="movie-card-img"
       />
       <br />
-      <button><i className='bx bx-star'></i></button>
+      <button>
+        <i className="bx bx-star"></i>
+      </button>
     </div>
   );
 };
