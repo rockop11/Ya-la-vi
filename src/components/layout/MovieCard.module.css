@@ -1,18 +1,49 @@
 .movieCard {
-  margin: 0 auto 5px;
-  width: 80%;
-  /* border: 1px solid #ffffff; */
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 20px 10px;
+}
+
+.movieCardInfo__title{
+  display:flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.MovieCardDescription{
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieCardInfo__year , .movieCardInfo__lang {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px 10px 5px;
+}
+
+.date{
+  margin-left: 5px;
 }
 
 .movieCardImg {
-  width: 100%;
+  height: 500px;
 }
 
 .movieCardInfo {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  bottom: 6px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
 }
+
+i { 
+  color: rgb(27, 208, 199);
+    font-size: 24px;
+  cursor: pointer;
+}
+
 
 .infoTitle {
   font-size: 18px;
@@ -20,18 +51,8 @@
   /* text-align: center; */
 }
 
-.desc {
-  text-align: left;
-  font-size: 14px;
-}
-
 button {
   background-color: transparent;
   border: none;
 }
 
-i { 
-  color: #ffffff;
-  font-size: 32px;
-  cursor: pointer;
-}
