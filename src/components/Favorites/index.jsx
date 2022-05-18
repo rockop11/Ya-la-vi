@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import MovieCard from "../layout/MovieCard";
 import FavoritesContext from "../../context/FavoritesContext";
-import "./Favorites.css";
+import { MainTitle, MovieCounter } from "./styles";
 
 const Favorites = () => {
   const favoritesCtx = useContext(FavoritesContext);
@@ -9,13 +9,13 @@ const Favorites = () => {
 
   return (
     <div>
-      <h2 className="fav-title">YA LAS VI: </h2>
+      <MainTitle>YA LAS VI :</MainTitle>
       {
         // cambiar color del titulo en CSS
         !favorites.length ? <h3>Tu lista esta vacia...</h3> : ""
       }
       {favorites.length > 0 && (
-        <p className="fav-title">Viste {favorites.length} peliculas</p>
+        <MovieCounter>Viste {favorites.length} peliculas</MovieCounter>
       )}
       <div className="movie-container">
         {favorites.map((movie, i) => {
