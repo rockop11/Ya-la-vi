@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import MovieCard from "./layout/MovieCard";
+import MovieCard from "../MovieCard";
 import "./Search.css";
 
 const Search = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "../../GlobalStyles";
-import popcorn from "../../assets/popcorn28x28.png";
+import { Button } from "../../../GlobalStyles";
+import popcorn from "../../../assets/popcorn28x28.png";
 import {
   Nav,
   NavbarContainer,
@@ -11,7 +11,7 @@ import {
   MenuLinkBtn,
   Menu,
   MenuLink,
-} from "./Navbar/Navbar";
+} from "./styles";
 
 const Navbar = () => {
   //click is the initial state and setclick will be the update state

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import MovieCard from "./layout/MovieCard";
-import FavoritesContext from "../context/FavoritesContext";
+import MovieCard from "../layout/MovieCard";
+import FavoritesContext from "../../context/FavoritesContext";
 import "./Favorites.css";
 
 const Favorites = () => {

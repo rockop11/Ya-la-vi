@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import NoImage from "../../assets/no-image.jpg";
+import NoImage from "../../../assets/no-image.jpg";
 import styles from "./MovieCard.module.css";
-import FavoritesContext from "../../context/FavoritesContext";
+import FavoritesContext from "../../../context/FavoritesContext";
 
 const MovieCard = ({ movie }) => {
   const FavoritesCtx = useContext(FavoritesContext);

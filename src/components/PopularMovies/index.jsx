@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MovieCard from "./layout/MovieCard";
+import MovieCard from "../layout/MovieCard";
 import "./PopularMovies.css";
 
 const PopularMovies = () => {

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import PopularMovies from "./components/PopularMovies";
-import Search from "./components/Search";
-import MovieDetail from "./components/layout/MovieDetail";
+import Search from "./components/layout/Search";
+import MovieDetail from "./components/MovieDetail";
 import Navbar from "./components/layout/Navbar";
 import Favorites from "./components/Favorites";
 import GlobalStyles from "./GlobalStyles";
