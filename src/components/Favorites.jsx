@@ -14,8 +14,10 @@ const Favorites = () => {
         // cambiar color del titulo en CSS
         !favorites.length ? <h3>Tu lista esta vacia...</h3> : ""
       }
+      {favorites.length > 0 && (
+        <p className="fav-title">Viste {favorites.length} peliculas</p>
+      )}
       <div className="movie-container">
-        {favorites.length > 0 && <p>Viste {favorites.length} peliculas</p>}
         {favorites.map((movie, i) => {
           return <MovieCard movie={movie} key={i} />;
         })}

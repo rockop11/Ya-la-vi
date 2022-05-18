@@ -39,8 +39,9 @@ const Search = () => {
           type="text"
           onChange={handleSearchValue}
           ref={searchRef}
-          placeholder="Ingresa una Pelicula..."
+          placeholder="Search for movie title ..."
         />
+        <i className="bx bx-search-alt"></i>
       </form>
 
       <div className="search-results">

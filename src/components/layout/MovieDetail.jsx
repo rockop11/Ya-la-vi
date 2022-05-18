@@ -9,6 +9,7 @@ const MovieDetail = () => {
   const apiURL = `https://api.themoviedb.org/3/movie/${id}?`;
 
   const [movieDetail, setMovieDetail] = useState({});
+  console.log(movieDetail);
 
   useEffect(() => {
     fetch(apiURL + apiKEY)
@@ -17,17 +18,36 @@ const MovieDetail = () => {
   }, []);
 
   return (
-    <div>
-      <h2 className={styles.title}>detalle de Pelicula: {movieDetail.title}</h2>
-      <img
-        src={imagePath + movieDetail.poster_path}
-        alt={movieDetail.title}
-        className="movie-card-img"
-      />
-      <br />
-      <button>
-        <i className="bx bx-star"></i>
-      </button>
+    <div
+      style={{
+        backgroundImage: `url(${imagePath + movieDetail.backdrop_path})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "100vh",
+      }}
+    >
+      {/* <h2 className={styles.title}>detalle de Pelicula: </h2> */}
+      <div className={styles.movieDetail}>
+        <img
+          src={imagePath + movieDetail.poster_path}
+          alt={movieDetail.title}
+          className="movie-card-img"
+        />
+        <div className={styles.movieDetail__description}>
+          <div className={styles.movieDetail__description__detail}>
+            <p>Duracion:{movieDetail.runtime}m</p>
+            <p>
+              <i className="bx bxs-star yellow" />
+              {movieDetail.vote_average}
+            </p>
+          </div>
+          <div className={styles.movieDetail__title}>{movieDetail.title}</div>
+          <p className={styles.desc}>{movieDetail.overview}</p>
+          <div className={styles.buttons}>
+            <button className={styles.addButton}>+ ADD LIST</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
