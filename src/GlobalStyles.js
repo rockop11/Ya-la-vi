@@ -61,18 +61,16 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: ${({ bigRadius }) => (bigRadius ? "30px" : "20px")};
-  background-color: ${({ primary }) => (primary ? "#1bd0c7" : "#000")};
-  color: ${({ primary }) => (primary ? "#000" : "#fff")};
+  background-color: ${({ primary }) => (primary ? "#1bd0c7" : "#2b303b")};
+  color: ${({ primary }) => (primary ? "#2b303b" : "#fff")};
   padding: ${({ big }) => (big ? "18px 30px" : "9px 24px")};
   font-size: ${({ bigFont }) => (bigFont ? "18px" : "16px")};
   outline: none;
   cursor: pointer;
   border: none;
-  transition: all 0.5s ease;
 
   &:hover {
     background-color: ${({ primary }) => (primary ? "#fff" : "#1bd0c7")};
-    transform: translateY(-0.5rem) scale(1.02);
     color: #000;
   }
   &:active {
@@ -113,5 +111,11 @@ export const OutlineButton = styled.button`
     border-radius: ${({ bigRadius }) => (bigRadius ? "20px" : "18px")};
     padding: ${({ big }) => (big ? "9px 30px" : "8px 28px")};
     font-size: ${({ fontBig }) => (fontBig ? "18px" : "16px")};
+  }
+`;
+
+export const Images = styled.img`
+  @media only screen and (max-width: 425px) {
+    height: ${({ small }) => (small ? "60%" : "100%")};
   }
 `;
